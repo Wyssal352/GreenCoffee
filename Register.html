@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="./assets/css/Register.css">
+</head>
+<body>
+<div class="titre"><h1>Register</h1></div>
+    <div class="container">
+       
+        <form id="registerForm">
+            <input type="text" id="username" placeholder="Nom d'utilisateur" required><br>
+            <input type="email" id="email" placeholder="Email" required><br>
+            <input type="password" id="password1" placeholder="Mot de passe" required minlength="8"><br>
+            <input type="password" id="password2" placeholder="Vérification de Mot de passe" required minlength="8"><br>
+
+            <button type="submit">Register</button>
+            <div class="home-container">
+                <a href="index.html" class="home">Home</a>
+            </div>
+                </form>
+    </div>
+
+    <div id="confirmation" class="confirmation">
+        <p>Votre inscription est bien enregistrée !</p>
+    </div>
+
+    <script src="./assets/js/register.js"></script>
+</body>
+</html>
