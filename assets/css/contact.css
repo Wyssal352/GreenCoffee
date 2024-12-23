@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    position: relative; 
+    z-index: 0; 
+    background-image: url('../img/contact.jpg'); 
+
+}
+
+body::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background: rgba(0, 0, 0, 0.6); 
+
+    background-position: center;
+    filter: blur(2px); 
+    z-index: -1; 
+opacity: 0.8;
+background-size: cover;
+
+}
+.section {
+    background: none;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    
+        background: url('image.jpg') no-repeat center center fixed;
+        background-size: cover;
+    
+}
+
+.image-section {
+    width: 20%;
+    height: 100vh; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+@keyframes moveImage {
+    0% {
+        top: 200px;
+    }
+    50% {
+        top: 250px;
+    }
+    100% {
+        top: 200px;
+    }
+}
+
+.hero-image img {
+    position: absolute; 
+    top: 200px; 
+    width:150%; 
+    object-fit: cover;
+    animation: moveImage 4s ease-in-out infinite;
+}
+.content-section {
+    width: 80%;
+    position: relative;
+    color: white;
+    padding: 20px;
+    overflow-y: auto; 
+}
+
+
+header h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
+}
+
+header nav ul {
+    text-align: center; 
+    padding: 0; 
+}
+
+header nav ul a {
+    color: rgba(246, 246, 246, 0.76);
+    font-weight: bold;
+    display: inline-block; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header nav ul a:hover {
+    color: red; 
+}
+
+.box {
+    color: rgb(255, 255, 255);
+margin-bottom: 36rem;
+font-family: cursive;
+size:10px;
+}
+.box span{
+    color: rgba(4, 255, 255, 0.4);
+font-weight: bold;
+font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+.secBox {
+    background-color: rgba(4, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 30px; 
+    max-width: 500px;
+    margin: 160px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    text-align: center;
+    display: block; 
+    margin: 20px auto 0; 
+    border-radius: 25%; 
+    color: brown;
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 10px 20px; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(245, 0, 41, 0.952);
+    color: white;
+}

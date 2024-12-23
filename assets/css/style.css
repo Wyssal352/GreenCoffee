@@ -1,0 +1,122 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    background-image: url('../img/r.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff; 
+    z-index: 0; 
+    position: relative;
+   
+  }
+  body::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background: rgba(0, 0, 0, 0.9); 
+
+    background-position: center;
+    filter: blur(9px); 
+    z-index: -1; 
+opacity: 0.8;
+background-size: cover;
+
+}
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(145, 75, 10, 0.4);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .register-button {
+    background-color: #c58940;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+   
+  .hero-text h1  {
+    font-size: 35px;
+  }
+  .hero-text h1 span {
+    font-size: 60px;
+  }
+  .hero-text {
+    max-width: 70%;
+  }
+  
+  .hero-text h1 span{
+    color: #c58940;
+  }
+  
+  
+.hero-buttons {
+    display: flex;
+    gap: 2rem; 
+    margin-top: 3rem;
+  }
+  
+  .btn1 .explore-button {
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    background-color: #c58940; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  .btn2 .order-button {
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    background-color: transparent; 
+    color: #c58940; 
+    border: 1px solid #c58940; 
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  
+
+  .explore-button:hover {
+    background-color: rgba(0, 120, 0, 0.4);
+  }
+  
+  .order-button:hover {
+    background-color: rgba(0, 120, 0, 0.4);
+    color: #fff;
+    border: #4c989b;
+  }
+  
+  
+  

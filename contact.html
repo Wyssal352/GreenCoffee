@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Café - Contact</title>
+    <link rel="icon" type="image/png" href="./assets/img/gg.png" >
+
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <div class="hero-image">
+                <section class="box">
+                    <div>
+                        <p><span>Adresse : </span>Djerba - Mahdia</p>
+                        <p><span>Téléphone :</span> +216 50 785 411</p>
+                        <p><span>Email : </span>GreenCoffee@gmail.com</p>
+                    </div>
+                </section>
+                <img src="assets/img/coffee-Photoroom.png" alt="Coffee Cup" />
+            </div>
+        </div>
+      
+        <div class="content-section">
+            <header>
+                <h1>Contactez-nous</h1>  <br>
+                <nav>
+                    <ul>
+                        <a href="index.html">Home</a>
+                    </ul>
+                </nav>
+            </header>
+        
+            
+        
+            <section class="secBox">
+                <form class="form">
+                    <label for="message">Votre message :</label>
+                    <textarea placeholder="Green Coffee" id="message" name="message" required></textarea>
+                    <div>
+                        <button type="submit" class="btn">Envoyer</button>
+                    </div>
+                </form>
+            </section>
+        
+           
+        </div>
+        
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            let position = 200; 
+            let direction = 1;   
+
+            function animateImage() {
+                position += direction * 2; 
+
+                
+                if (position >= 250 || position <= 200) {
+                    direction *= -1; 
+                }
+
+                $('.hero-image img').css('top', position + 'px');
+            }
+
+            setInterval(animateImage, 10);
+        });
+    </script>
+</body>
+</html>
+

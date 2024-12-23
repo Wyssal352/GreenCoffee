@@ -1,0 +1,102 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    background-image: url('../img/menu.webp');
+    background-position: center;
+    color: #fff; 
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #c58940; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; 
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #c58940; 
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #fff; 
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 9rem; 
+    padding: 2rem;
+    margin-top: 14rem;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #c58940;
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 250px; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.box:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); 
+}
+
+.box h2 a {
+    color: #c58940; 
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.box h2 a:hover {
+    color: #fff; 
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8); 
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #c58940;
+}
